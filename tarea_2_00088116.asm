@@ -1,6 +1,7 @@
     org 100h
 
-section .ejercicio1
+section .develop
+; ejercicio1
 	mov	ax, 0d
     add ax, 8d
     add ax, 8d
@@ -10,20 +11,26 @@ section .ejercicio1
     mov bl, 5d
     div bl
 	mov	di, 0d
-	mov	cx,[len]
+	mov	cx,len
 	move:
 		mov bh,[msg+di]
 		mov	[di+200h], bh
 		inc di
 		loop move
 
-section .ejercicio2
-    mov	al, 2d
-    mov	cx, 7d
-    mov bl, 2d
-duplicate:
-    mul bl
-	loop move
+; ejercicio2
+    mov	cx, 10d
+    mov	ax, 2d
+    mov bx, 2d
+    mov di, 0d
+    duplicate:
+        mul bx
+        mov [di+210h], al
+        inc di
+        ; if > 255
+        ; mov ax
+        ;inc di x2
+	    loop duplicate
     
 int 20h
 
