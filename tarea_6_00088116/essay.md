@@ -28,12 +28,26 @@ funcionan las computadoras, muchas de las cosas que el ser humano ha creado son 
 por la naturaleza, por ejemplo un avión copia el diseño de las alas de un ave para poder
 volar, o los trajes de buceo usan varios aditamentos parecidos con aletas de pez pero
 las computadoras son lo más cercano a una ___creación abstracta___ concebida del vientre
-de la logica, por lo que naturalmente se generan bastantes ideas erroneas en torno a como
-funcionan principalmente por el hecho de todas las capaz de abstraccion que ocultan y oscurencen
-la logica disfrasandola de magia. Haciendo restrospectiva en el curso vemos que realmente
-los programas en ensamblador no son muy complejos como yo creia, sino que son tediosos ya que
-no hay pixel que cambie de color o dato en memoria que cambie si yo no lo decido asi. 
+de la lógica, por lo que naturalmente se generan bastantes ideas erróneas en torno a como
+funcionan principalmente por el hecho de todas las capaz de abstracción que ocultan y oscurecen
+la lógica disfrazándola de magia. Haciendo retrospectiva en el curso vemos que realmente
+los programas en ensamblador no son muy complejos como yo creía, sino que son tediosos ya que
+no hay pixel que cambie de color o byte en memoria que cambie si yo no lo decido así. 
 El verdadero problema es la complejidad de las tareas que se les asigna a los programadores
-incrementando asi la complejidad del software y con el todos los posibles errores humanos
-que un programador podria comenter, por eso decidieron encerrarce en su _jaula de abstraccion_,
+incrementando así la complejidad del software y con el todos los posibles errores humanos
+que un programador podría cometer, por eso decidieron encerrarse en su _jaula de abstracción_,
 para protegerse de ellos mismos.
+
+Dicho esto ensamblador parece mejor adaptado cuando se requiere un control absoluto de las acciones
+de un programa, en otras palabras puede usarse para la creación de controladores en hardware 
+dedicado a ciertas tareas, en esto último entra un campo llamado internet de las cosas
+el cual consiste en el uso de objetos de la vida cotidiana y agregarle funciones nuevas a travez
+de una conexión a internet, por ejemplo conectar sensores biometricos a una puerta que se conecta
+a internet y deje pasar o no a una persona, camaras de seguridad con reconocimiento facial entre
+otras cosas. Por ejemplo podríamos conectar un par de sensores de humedad y temperatura a un
+arduino para enviar la señal por internet y así monitorear en tiempo real ubicaciones en
+una bodega con comida por ejemplo. 
+
+También de marera recreativa es interesante ver como los códigos de las instrucciones se traduce
+en circuitos reales en el CPU y en general como el diseño del CPU en términos de circuitos afecta
+el diseño del código de ensamblador que usa.
