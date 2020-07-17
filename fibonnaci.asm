@@ -12,6 +12,8 @@ _start:
     mov [row], word 0d
     mov [height], word 480d
     mov [width], word 394d
+    mov al,"1"
+    call w_char
     call draw_rectangle
 
     ; rectangle for 5
@@ -63,6 +65,14 @@ graphic_mode:
     ; Resolution 640x480
     mov al, 12h
     int 10h
+    ret
+
+w_char:
+    mov 	ah, 09h
+    mov 	bh, 0h
+    mov 	bl, 00000001b
+    mov 	cx, 1h
+    int 	10h
     ret
 
 pixel:
